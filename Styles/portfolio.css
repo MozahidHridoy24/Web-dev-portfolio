@@ -95,7 +95,7 @@ main section{
     font-size: 45px;
 }
 .banner-profile-pic{
-    width: 500px;
+    width: 100%;
 }
 
 /* header */
@@ -144,6 +144,7 @@ main section{
     justify-content: space-between;
     align-items: center;
     margin-bottom: 50px;
+    background-color: #FFF8F3;
 }
 .experience-sub-title{
     font-size: 20px;
@@ -159,4 +160,31 @@ main section{
 }
 .resume hr{
     margin: 30px 5px;
+}
+
+/* Responsive query */
+
+@media screen and (max-width: 576px) {
+    .skill-container,
+    .resume-container,
+    .banner,
+    nav,
+    nav > ul,
+    .about-infos{
+        flex-direction: column;
+    }
+    nav > ul{
+        /* gap: 10px; */
+        padding: 0px;
+        justify-content: center;
+    }
+    .btn-primary{
+        gap: 20px;
+    }
+    .about{
+        padding: 20px;
+    }
+    .banner{
+        margin: 20px;
+    }
 }
